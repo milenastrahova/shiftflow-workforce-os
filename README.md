@@ -1,5 +1,7 @@
 # ShiftFlow — Workforce Operations & Smart Scheduling
 
+**[🚀 Live demo](https://shiftflow-workforce-os.vercel.app/) · [GitHub source](https://github.com/milenastrahova/shiftflow-workforce-os)**
+
 > A polished, local-first workforce operations dashboard built to demonstrate **AI-assisted software development, workflow automation, business logic and critical validation**.
 
 **React 19 · TypeScript · Tailwind CSS 4 · Vite · Recharts · Node native test runner**
@@ -105,26 +107,13 @@ tests/
 5. Server-side AI natural-language assistant *with* rule validation and human approval.
 6. Server-side transactional scheduling updates to prevent simultaneous double bookings.
 
-## Publishing on GitHub
+## Live demo & deployment
 
-You can upload this project to a new GitHub repo named `shiftflow-workforce-os`.
+**Try the deployed app:** https://shiftflow-workforce-os.vercel.app/
 
-```bash
-# Extract ZIP and open terminal inside the shiftflow folder:
-npm install
-npm test
-npm run build
+The frontend is deployed with Vercel from this GitHub repository (branch `main`). Vercel detects Vite, runs `npm run build`, and serves the generated `dist/` directory. Changes merged into `main` can trigger a new deployment.
 
-git init
-git add .
-git commit -m "feat: build ShiftFlow workforce operations prototype"
-git branch -M main
-# Create a new EMPTY repo in GitHub first (do not add a README/license)
-git remote add origin https://github.com/milenastrahova/shiftflow-workforce-os.git
-git push -u origin main
-```
-
-To deploy the static frontend, import the GitHub repo into Vercel or Netlify, use build command `npm run build`, and publish directory `dist`. Because data is local to each visitor, every browser starts with demo data.
+**Demo limitations:** This is a client-side portfolio prototype, not a shared production service. Every visitor begins with fictional demo data, and changes are stored only in that visitor's browser localStorage. There is no backend, authentication, or connected LLM.
 
 ## Portfolio description
 
